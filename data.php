@@ -7,10 +7,10 @@ function get_hosts() {
   while ($host = mysql_fetch_array($raw)) {
     if (($host['available']==2) OR ($host['available']==0)) { 
       $hosts[$host['hostid']]['status_human'] = "PROBLEM"; };
-      $hosts[$host['hostid']]['marker_color'] = 'red';
+      $hosts[$host['hostid']]['marker_color'] = '';
     if ($host['available']==1) { 
       $hosts[$host['hostid']]['status_human'] = 'OK'; 
-      $hosts[$host['hostid']]['marker_color'] = 'green';
+      $hosts[$host['hostid']]['marker_color'] = '_green';
     };
     $hosts[$host['hostid']]['available'] = $host['available'];
     $hosts[$host['hostid']]['id'] = $host['hostid'];

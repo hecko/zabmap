@@ -53,7 +53,7 @@
     echo 'window.'.$h['zagmap_host'].'_pos = new google.maps.LatLng('.$h['location'].');'."\n\n";
     echo 'window.'.$h['zagmap_host'].'_mark = new google.maps.Marker({
             position: '.$h['zagmap_host'].'_pos,
-            icon: \'http://www.google.com/mapfiles/marker_'.$h['marker_color'].'.png\',
+            icon: \'http://www.google.com/mapfiles/marker'.$h['marker_color'].'.png\',
             map: map,
             zIndex: 2,
             title: "'.$h['zagmap_host'].'"});'."\n\n";
