@@ -50,7 +50,6 @@
 <?php
   $hosts = get_hosts();
   foreach ($hosts as $h) {
-    if ($h['location']==',') { continue; };
     echo 'window.'.$h['zagmap_host'].'_pos = new google.maps.LatLng('.$h['location'].');'."\n\n";
     echo 'window.'.$h['zagmap_host'].'_mark = new google.maps.Marker({
             position: '.$h['zagmap_host'].'_pos,
@@ -64,9 +63,11 @@
     }
   </script>
   <body style="margin:0px; padding:0px;" onload="initialize()">
-  <div id="map_canvas" style="width:100%; height:100%;"></div>
+  <div id="map_canvas" style="width:100%; height:80%;"></div>
 
+<pre>
 <?php print_r($hosts) ;?>
+</pre>
 
   </body>
 </html>
