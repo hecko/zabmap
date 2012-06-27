@@ -22,6 +22,8 @@ function get_hosts() {
       $hosts[$host['hostid']]['marker_color'] = '_green';
     };
     $hosts[$host['hostid']]['available'] = $host['available'];
+    $hosts[$host['hostid']]['name'] = $host['name'];
+    $hosts[$host['hostid']]['host'] = $host['host'];
     $hosts[$host['hostid']]['id'] = $host['hostid'];
     $hosts[$host['hostid']]['zagmap_host'] = "x".$host['hostid']."x";
     unset($host);

@@ -56,14 +56,14 @@
             icon: \'http://www.google.com/mapfiles/marker'.$h['marker_color'].'.png\',
             map: map,
             zIndex: 2,
-            title: "'.$h['zagmap_host'].'"});'."\n\n";
+            title: "'.$h['name'].'"});'."\n\n";
   }
 ?>
 
     }
   </script>
   <body style="margin:0px; padding:0px;" onload="initialize()">
-  <div id="map_canvas" style="width:100%; height:80%;"></div>
+  <div id="map_canvas" style="width:100%; height:60%;"></div>
 
 <pre>
 <?php print_r($hosts) ;?>
