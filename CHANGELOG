@@ -1,0 +1,3 @@
+0.1 - 2012-06-27 maco@blava.net
+  - coded first proof of concept compatible with zabbix 2.0 only
+  - inspiration comes from Nagios's NagMap from myself :)

@@ -1,0 +1,4 @@
+Copy into web server directory
+Edit config.php
+Add longitude and latitude to Zabbix hosts inventory fields
+Go to web browser and load the ZabMap page
